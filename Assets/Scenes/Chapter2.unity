@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36423154}
   - component: {fileID: 36423155}
+  - component: {fileID: 36423156}
   m_Layer: 5
   m_Name: Toggle2
   m_TagString: Untagged
@@ -209,6 +210,35 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &36423156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36423153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1391467504}
+          m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+          m_MethodName: ChangePlayerType
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &100990252
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +559,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1391467504}
+        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+        m_MethodName: ChangePlayerImageScale
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &207290587
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,10 +641,10 @@ RectTransform:
   m_Father: {fileID: 1391467503}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 856, y: 600}
+  m_SizeDelta: {x: -280, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &243685547
 MonoBehaviour:
@@ -985,6 +1027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433652162}
   - component: {fileID: 433652163}
+  - component: {fileID: 433652164}
   m_Layer: 5
   m_Name: Toggle1
   m_TagString: Untagged
@@ -1061,6 +1104,35 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &433652164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433652161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1391467504}
+          m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+          m_MethodName: ChangePlayerType
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &503343995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 616128076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1391467504}
+        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+        m_MethodName: Submit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &616128076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2438,7 +2522,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1274881865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1391467504}
+        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+        m_MethodName: Back
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1274881865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2489,6 +2585,7 @@ GameObject:
   - component: {fileID: 1391467502}
   - component: {fileID: 1391467501}
   - component: {fileID: 1391467500}
+  - component: {fileID: 1391467504}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2588,6 +2685,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1391467504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391467499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7144d68e7e0de44a6a0f5c9c786393f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameField: {fileID: 291034186}
+  _playerImage: {fileID: 680841096}
+  _playerImageScaleSlider: {fileID: 155026458}
+  _monsterSprite: {fileID: 21300000, guid: 429828955efaa4647a3063853a960086, type: 3}
+  _mermanSprite: {fileID: 21300000, guid: 48f5c38ac1eff408086caf8416e702e7, type: 3}
+  _robotSprite: {fileID: 21300000, guid: e13c128939d8344739318b4cf0d5cc19, type: 3}
 --- !u!1 &1410518615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,7 +2986,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1435163151}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1391467504}
+        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1435163151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,7 +3710,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1391467504}
+        m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+        m_MethodName: set_IsFlipPlayerImage
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1907438516
 GameObject:
@@ -3674,6 +3813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1922828813}
   - component: {fileID: 1922828814}
+  - component: {fileID: 1922828815}
   m_Layer: 5
   m_Name: Toggle3
   m_TagString: Untagged
@@ -3750,6 +3890,35 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &1922828815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922828812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1391467504}
+          m_TargetAssemblyTypeName: GameSystem, Assembly-CSharp
+          m_MethodName: ChangePlayerType
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1960357308
 GameObject:
   m_ObjectHideFlags: 0
